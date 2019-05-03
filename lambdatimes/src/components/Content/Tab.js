@@ -1,5 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const AllTabs = styled.div`
+    display: flex;
+    justify-content: none;
+    align-items: center;
+    flex-direction: row;
+    color: #fff;
+    background-color: #333;
+    margin: 0 5px;
+    padding: 2px 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: bold;
+
+    :hover {
+      text-decoration: underline;
+    }
+
+    ${props => (props.type === 'primary' ? `background-color: black` : null)}
+    ${props => (props.type === 'active-tab' ? `background-color: white`: null)}
+`;
+
+
 
 const Tab = props => {
   /* Using your props, determine if the `tab` prop matches the `selectedTab` prop, 

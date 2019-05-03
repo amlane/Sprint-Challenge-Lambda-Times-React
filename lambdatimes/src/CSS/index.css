@@ -1,4 +1,4 @@
-.width-100 {
+/* .width-100 {
   width: 100%;
 }
 .border-bottom-grey {
@@ -43,15 +43,15 @@ body {
 }
 #root {
   width: 100%;
-}
-.App {
+} */
+/* .App {
   display: flex;
   align-items: center;
   flex-direction: column;
   background-color: #f1f1f1;
   color: #333;
   font-family: 'PT Sans', sans-serif;
-}
+} */
 /* .top-bar {
   width: 100%;
   display: flex;
@@ -160,12 +160,12 @@ body {
   margin-right: 25px;
   flex: 1;
 } */
-.content-container {
+/* .content-container {
   display: flex; 
   flex-direction: column; 
   align-items: center;
-}
-.tabs {
+} */
+/* .tabs {
   border-bottom: 1px solid lightgrey;
   display: flex;
   justify-content: center;
@@ -179,19 +179,19 @@ body {
   .tabs {
     width: 1280px;
   }
-}
-.tabs .topics {
+} */
+/* .tabs .topics {
   display: flex;
   justify-content: none;
   align-items: center;
   flex-direction: row;
-}
-.tabs .topics .title {
+} */
+/* .tabs .topics .title {
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: bold;
-}
-.tabs .topics .tab {
+} */
+.tab {
   display: flex;
   justify-content: none;
   align-items: center;
@@ -205,10 +205,10 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
-.tabs .topics .tab:hover {
+.tab:hover {
   text-decoration: underline;
 }
-.tabs .topics .active-tab {
+.active-tab {
   background-color: #fff;
   color: #333;
   border: 2px solid #333;
