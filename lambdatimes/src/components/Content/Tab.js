@@ -15,12 +15,13 @@ const AllTabs = styled.div`
     letter-spacing: 2px;
     cursor: pointer;
     font-weight: bold;
+    color: black;
 
     :hover {
       text-decoration: underline;
     }
 
-    ${props => (props.type === 'primary' ? `background-color: black` : null)}
+    ${props => (props.type === 'primary' ? `color: black;` : null)}
     ${props => (props.type === 'active-tab' ? `background-color: white`: null)}
 `;
 
@@ -31,8 +32,8 @@ const Tab = props => {
       if they match, the className should be: 'tab active-tab', 
       if it is not it should just be 'tab'*/
   return (
-    <div
-      className={props.tab === props.selectedTab ? 'tab active-tab' : 'tab'}
+    <AllTabs
+      type={props.tab === props.selectedTab ? 'primary' : 'active-tab'}
       onClick={ () => {
         /* Replace this dummy click handler function with your selectTabHandler function from props 
          you'll need to pass the `tab` in as an argument to this handler. */
@@ -41,7 +42,7 @@ const Tab = props => {
       }}
     >
       {props.tab.toUpperCase()}
-    </div>
+    </AllTabs>
   );
 };
 

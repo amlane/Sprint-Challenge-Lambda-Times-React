@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { injectGlobal } from 'styled-components';
-import './CSS/index.css';
 import App from './App';
 
 injectGlobal`
