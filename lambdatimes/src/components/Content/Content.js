@@ -56,6 +56,7 @@ export default class Content extends Component {
     } else {
       return this.state.cards.filter( card => card.tab === this.state.selected )
     }
+    return this.state.cards;
   };
 
   render() {
@@ -68,8 +69,8 @@ export default class Content extends Component {
         */}
         <Tabs 
         tabs={this.state.tabs}
-        selectedTab={this.changeSelected} 
-        selectTabHandler={this.filterCards}
+        selectedTab={this.state.selected} 
+        selectTabHandler={this.changeSelected}
         />
         <Cards cards={this.filterCards()} />
       </ContentContainer>
