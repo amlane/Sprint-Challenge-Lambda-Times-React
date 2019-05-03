@@ -11,6 +11,8 @@ const CardStyling = styled.div`
   background-color: #fff;
   width: 380px;
   margin-bottom: 16px;
+  margin-right: 10px;
+  margin-left: 10px;
   padding: 24px;
 `;
 

@@ -21,8 +21,8 @@ const AllTabs = styled.div`
       text-decoration: underline;
     }
 
-    ${props => (props.type === 'primary' ? `color: black;` : null)}
-    ${props => (props.type === 'active-tab' ? `background-color: white`: null)}
+    ${props => (props.type === 'primary' ? `border: 1px solid red` : null)}
+    ${props => (props.type === 'active-tab' ? `background-color: black; color: white`: null)}
 `;
 
 
