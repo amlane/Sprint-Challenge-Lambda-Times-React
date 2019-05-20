@@ -21,8 +21,8 @@ const AllTabs = styled.div`
       text-decoration: underline;
     }
 
-    ${props => (props.type === 'primary' ? `border: 1px solid red` : null)}
-    ${props => (props.type === 'active-tab' ? `background-color: black; color: white`: null)}
+    ${props => (props.type === 'selected-tab' ? `background: white; border: 1px solid` : null)}
+    ${props => (props.type === 'inactive-tab' ? `background-color: black; color: white`: null)}
 `;
 
 
@@ -33,12 +33,11 @@ const Tab = props => {
       if it is not it should just be 'tab'*/
   return (
     <AllTabs
-      type={props.tab === props.selectedTab ? 'primary' : 'active-tab'}
+      type={props.tab === props.selectedTab ? 'selected-tab' : 'inactive-tab'}
       onClick={ () => {
         /* Replace this dummy click handler function with your selectTabHandler function from props 
          you'll need to pass the `tab` in as an argument to this handler. */
          props.selectTabHandler(props.tab);
-         props.selectedTab(props.tab);
       }}
     >
       {props.tab.toUpperCase()}
